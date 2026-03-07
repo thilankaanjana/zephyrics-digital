@@ -1,0 +1,2 @@
+# zephyrics-digital
+lovable ui
