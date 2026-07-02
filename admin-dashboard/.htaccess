@@ -1,0 +1,11 @@
+# Deny direct access to config, sql, includes
+RedirectMatch 403 ^/admin-dashboard/config/.*$
+RedirectMatch 403 ^/admin-dashboard/sql/.*$
+RedirectMatch 403 ^/admin-dashboard/includes/.*$
+
+Options -Indexes
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

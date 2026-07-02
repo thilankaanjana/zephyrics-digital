@@ -1,0 +1,5 @@
+# Block PHP execution inside the uploads folder
+<FilesMatch "\.(php|phtml|phps|cgi|pl|py|jsp|asp|htm|shtml|sh)$">
+  Require all denied
+</FilesMatch>
+Options -ExecCGI
