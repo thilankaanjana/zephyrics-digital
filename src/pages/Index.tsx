@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { ToolsSection } from "@/components/sections/ToolsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <WhyUsSection />
       <ProcessSection />
       <ToolsSection />
+      <TestimonialsSection />
     </Layout>
   );
 };
